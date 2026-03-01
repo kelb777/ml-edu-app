@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive educational course teaching ML concepts through analogies, visualizations, and hands-on demos.">
+  <title>ML Fundamentals — An Interactive Guide to Machine Learning</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="app-shell" id="app">
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="logo" id="logoHome" style="cursor:pointer;">ML<span>Fundamentals</span></div>
+        </div>
+        <div class="header-right">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <div class="toggle-thumb">
+              <span class="toggle-icon" id="themeIcon">&#9728;</span>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="progress-bar-container">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SIDEBAR OVERLAY (mobile) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- BODY -->
+    <div class="app-body">
+      <!-- SIDEBAR NAV -->
+      <nav class="sidebar" id="sidebar" role="navigation" aria-label="Course modules">
+        <!-- Populated by app.js -->
+      </nav>
+
+      <!-- MAIN -->
+      <main class="main-content" id="mainContent" role="main">
+        <!-- Populated by app.js -->
+      </main>
+    </div>
+  </div>
+
+  <script src="js/modules.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

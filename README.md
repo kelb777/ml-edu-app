@@ -1,5 +1,7 @@
 # ML Fundamentals — Interactive Education Web App
 
+*Last updated: 03-11-26*
+
 An interactive, non-technical educational web application teaching machine learning concepts through real-world analogies, visual comparisons, and hands-on interactive demos.
 
 ## Features
